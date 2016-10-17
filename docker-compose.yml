@@ -1,0 +1,9 @@
+version: '2'
+services:
+  tinyproxy:
+    image: 4km3/tinyproxy:latest
+    ports:
+      - "3128:3128"
+    volumes:
+      - ./tinyproxy.conf:/etc/tinyproxy/tinyproxy.conf
+    restart: always
